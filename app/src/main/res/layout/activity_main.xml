@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FEFEFE"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginTop="35dp"
+                android:src="@drawable/kotlinbasic"
+                android:layout_width="wrap_content"
+                android:layout_height="220dp" />
+
+            <TextView
+                android:id="@+id/textViewBasics"
+                android:layout_width="match_parent"
+                android:hint="Basics"
+                android:textSize="35sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/button_result"
+                android:layout_width="100dp"
+                android:text="Result"
+                android:backgroundTint="#6E74E0"
+                android:layout_gravity="center"
+                android:layout_height="50dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Switch
+                    android:layout_weight="1"
+                    android:id="@+id/switch1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:text="Switch" />
+
+                <CheckBox
+                    android:layout_weight="1"
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kotlin" />
+
+                <CheckBox
+                    android:layout_weight="1"
+                    android:id="@+id/checkBox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Java" />
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Radio Button" />
+
+            </LinearLayout>
+
+            <ToggleButton
+                android:layout_gravity="center"
+                android:id="@+id/toggleButton"
+                android:backgroundTint="#A8B3EE"
+                android:layout_width="200dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton" />
+
+            <TextView
+                android:text="SeekBar and RatingBar"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:background="#DCE0F8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textViewResults"
+                android:layout_width="match_parent"
+                android:textSize="35sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <SeekBar
+                android:id="@+id/seekBar2"
+                android:layout_marginTop="20dp"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="10"
+                android:progress="3" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:stepSize="0.5"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:text="TimePicker"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:background="#DCE0F8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TimePicker
+                android:id="@+id/timePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/clockButton"
+                    android:layout_width="100dp"
+                    android:layout_gravity="center"
+                    android:text="Pick"
+                    android:textSize="20sp"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/clockView"
+                    android:layout_width="100dp"
+                    android:textSize="20sp"
+                    android:hint="Your Time"
+                    android:gravity="center"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:text="WebView"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:background="#DCE0F8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
